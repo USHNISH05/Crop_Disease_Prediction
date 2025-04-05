@@ -3,7 +3,7 @@ pandas
 tensorflow
 keras
 streamlit
-pymongo==4.11.3
-opencv
-PTL
+pymongo
+opencv-python
+pillow
 python
