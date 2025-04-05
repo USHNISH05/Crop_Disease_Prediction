@@ -6,4 +6,4 @@ streamlit
 pymongo
 opencv-python
 pillow
-python
+python==3.10.11
