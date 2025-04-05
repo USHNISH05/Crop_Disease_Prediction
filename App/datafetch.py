@@ -1,9 +1,9 @@
 import streamlit as st
-from pymongo import MongoClient
+import pymongo
 
 class DataFetch:
     def healthy_dataFetch(self, healthy_crop_name):
-        client = MongoClient("mongodb://localhost:27017/")  
+        client = pymongo.MongoClient("mongodb://localhost:27017/")  
         db = client["Crop_Disease_Prediction"]
         collection = db["Healthy_Crop"]
 
@@ -25,7 +25,7 @@ class DataFetch:
         client.close()
         
     def infected_dataFetch(self, infected_crop_name):
-        client = MongoClient("mongodb://localhost:27017/")  
+        client = pymongo.MongoClient("mongodb://localhost:27017/")  
         db = client["Crop_Disease_Prediction"]
         collection = db["Infected_Crop"]
 
